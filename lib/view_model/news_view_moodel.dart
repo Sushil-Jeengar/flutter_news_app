@@ -9,4 +9,8 @@ class NewsViewModel {
     return response;
   }
 
+  Future<TopNewsModels> fetchNewsByCategory(String category) async {
+    return await _rep.fetchNewsByCategory(category);
+  }
+
 }
